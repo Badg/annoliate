@@ -44,7 +44,7 @@ class Router:
 
         # Recursion in python is pretty slow compared to looping, so just do
         # this the iterative way
-        for segment in path.segments:
+        for segment in incoming_route.segments:
             # A direct match means this is a static path component; proceed
             # down the routing tree
             if segment in current_lookup:
